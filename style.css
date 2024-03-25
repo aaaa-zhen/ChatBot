@@ -6,7 +6,7 @@ body {
 }
 
 .chat-container {
-    max-width: 100%; /* 修改此处 */
+    max-width: 600px;
     margin: 20px auto;
     background-color: #fff;
     border-radius: 10px;
@@ -25,7 +25,7 @@ body {
 .chat-messages {
     padding: 20px;
     overflow-y: auto;
-    max-height: 70vh; /* 调整聊天消息容器的高度 */
+    height: 300px;
 }
 
 .message {
@@ -44,7 +44,7 @@ body {
     background-color: #f2f2f2;
     padding: 10px;
     border-radius: 5px;
-    max-width: 80%; /* 修改此处 */
+    max-width: 70%;
     display: inline-block;
 }
 
@@ -74,5 +74,5 @@ body {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin-left: 10px;
+    margin-left: 10px; /* Adjust as needed */
 }
