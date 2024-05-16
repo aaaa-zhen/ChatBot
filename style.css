@@ -6,12 +6,15 @@ body {
 }
 
 .chat-container {
-    max-width: 600px;
-    margin: 20px auto;
+    max-width: 800px;
+    height: 1000px; /* 增加高度 */
+    margin: 80px auto;
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .chat-header {
@@ -25,7 +28,7 @@ body {
 .chat-messages {
     padding: 20px;
     overflow-y: auto;
-    height: 300px;
+    flex-grow: 1; /* 使消息区域随容器高度变化 */
 }
 
 .message {
@@ -58,21 +61,24 @@ body {
     justify-content: center;
     align-items: center;
     padding: 10px;
+    background-color: #f9f9f9; /* 增加背景颜色以区分输入区域 */
 }
 
 .chat-input input[type="text"] {
     flex: 1;
-    padding: 8px;
+    padding: 10px;
     border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
 .chat-input button {
-    width: 60px;
-    height: 22px;
+    width: 80px;
+    height: 40px;
     background-color: #007bff;
     color: #fff;
     border: none;
-    border-radius: 12px;
+    border-radius: 5px;
     cursor: pointer;
-    margin-left: 10px; /* Adjust as needed */
+    margin-left: 10px; /* 调整间距 */
+    font-size: 1em; /* 调整字体大小 */
 }
