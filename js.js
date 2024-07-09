@@ -41,10 +41,11 @@ function sendMessage() {
         // 创建一个容器元素，用于放置所有段落
         var contentContainer = document.createElement("div");
     
-        // 添加每个段落到内容容器中
+        // 添加每个段落到内容容器中，并应用动画类
         paragraphs.forEach(paragraphText => {
             var paragraphElement = document.createElement("p");
             paragraphElement.textContent = paragraphText;
+            paragraphElement.classList.add("fade-in"); // 添加动画类
             contentContainer.appendChild(paragraphElement);
         });
     
@@ -60,10 +61,6 @@ function sendMessage() {
         // 添加 API 响应到对话历史
         conversationHistory.push({"role": "assistant", "content": data.choices[0].message.content});
     })
-    
-    
-    
-
     .catch(error => console.error('Error:', error));
 
     document.getElementById("user-input").value = "";
