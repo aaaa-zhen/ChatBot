@@ -26,7 +26,7 @@ function sendMessage() {
             'Authorization': 'Bearer sk-3h4UkodL951Aif2EC9A485C91eBe4bE4B04d599fA355D5F8'
         },
         body: JSON.stringify({
-            "model": "gpt-4o",
+            "model": "gpt-4o-mini",
             "messages": conversationHistory // 传递对话历史作为上下文
         })
     })
